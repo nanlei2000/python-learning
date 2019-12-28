@@ -1,4 +1,4 @@
-import typing
+from typing import Tuple
 
 
 def run():
@@ -11,7 +11,7 @@ def run():
     print(print_text)
 
 
-def get_text(height: float, weight: int)-> (float, str):
+def get_text(height: float, weight: int)-> Tuple[float, str]:
     # 低于18.5：过轻
     # 18.5-25：正常
     # 25-28：过重
